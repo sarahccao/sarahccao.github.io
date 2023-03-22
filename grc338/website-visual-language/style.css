@@ -16,8 +16,11 @@ div.home-container {
 }
 
 div.container{
+	position: relative;
+    min-height: 100vh;
 	background-color: rgb(255, 255, 255);
 	margin: auto;
+	padding: 0rem 0rem 2rem 0rem;
 }
 
 /* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
@@ -29,12 +32,12 @@ body{
 }
 
 main { 
-	margin: 0rem;
+	margin: 1.5rem 2rem;
 }
 
 article{
 	background-color: rgb(255, 255, 255);
-	max-width: 60em;
+	max-width: 50em;
 	margin: 3em auto;
 }
 
@@ -64,8 +67,6 @@ section p{
 img {
     width: 100%; /*Please leave this line.*/
     display: block;
-	max-width: 60em;
-	margin: auto;
 }
 
 header {
@@ -90,7 +91,7 @@ h2 {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 3rem;
-	margin: 1rem 0rem 0rem;
+    margin: 2rem 0rem 1.5rem;
 	font-weight: bold;
 	text-align: left;
 	color: #005e21;
@@ -123,13 +124,9 @@ ul li 	{
 	padding: 5px 2px;
 }
 
-main.menu {
-	padding: 5em;
-}
-
 main.menu ul {
 	display: grid;
-	margin: 3rem 1rem;
+	margin: auto;
 	font-family: sans-serif;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto auto;
@@ -138,6 +135,7 @@ main.menu ul {
 
 main.menu ul li {
     display: grid;
+	margin: 1em 0em;
     font-family: sans-serif;
 }
 
@@ -261,10 +259,12 @@ footer p {
 	main menu ul{
 		display: grid;
 		margin: 1em 1em 1em;
-		grid-template-columns: auto auto;
+		font-family: sans-serif;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto auto;
 		column-gap: 5em;
-	}
+	}	
+
 	header, footer{
 		grid-column: 1/3;
 	}
